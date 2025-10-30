@@ -24,7 +24,7 @@ export function getNonEmptyQuestions(questions: Question[]): Question[] {
  */
 export function findQuestion(
     questions: Question[],
-    id: number
+    id: number,
 ): Question | null {
     return null;
 }
@@ -75,7 +75,7 @@ export function addNewQuestion(
     questions: Question[],
     id: number,
     name: string,
-    type: QuestionType
+    type: QuestionType,
 ): Question[] {
     return [];
 }
@@ -84,13 +84,13 @@ export function addNewQuestion(
  * Consumes an array of Questions and produces a new array of Questions, where all
  * the Questions are the same EXCEPT for the one with the given `targetId`. That
  * Question should be the same EXCEPT that its name should now be `newName`.
- * Hint: as usual, do not modify the input questions array, 
+ * Hint: as usual, do not modify the input questions array,
  *       to make a new copy of a question with some changes, use the ... operator
  */
 export function renameQuestionById(
     questions: Question[],
     targetId: number,
-    newName: string
+    newName: string,
 ): Question[] {
     return [];
 }
@@ -104,14 +104,14 @@ export function renameQuestionById(
  *
  * Remember, if a function starts getting too complicated, think about how a helper function
  * can make it simpler! Break down complicated tasks into little pieces.
- * 
+ *
  * Hint: you need to use the ... operator for both the question and the options array
  */
 export function editOption(
     questions: Question[],
     targetId: number,
     targetOptionIndex: number,
-    newOption: string
+    newOption: string,
 ): Question[] {
     return [];
 }
